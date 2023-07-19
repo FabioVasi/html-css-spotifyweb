@@ -39,6 +39,9 @@ body{
     flex-wrap: wrap;
     margin: 0 auto;
 }
+.text-center{
+    text-align: center;
+}
 [class^='col-']
 {
     padding: 1rem;
@@ -53,6 +56,8 @@ body{
 }
 /*header*/
 header{
+    height: calc(100vh - 150px);
+    overflow: auto;
     width: 300px;
     background-color: #000000;
 }
@@ -74,7 +79,9 @@ header{
 }
 /*Main*/
 main{
-    width: calc(100% - 250px);
+    width: calc(100% - 300px);
+    height: calc(100vh - 150px);
+    overflow: auto;
     background-color: #141922;
 }
 /*Site Header*/
@@ -91,7 +98,7 @@ main{
 }
 .button{
     margin-right: 25px;
-    width: 300px;
+    width: 250px;
     height: 50px;
     background-color: green;
 }
@@ -99,10 +106,9 @@ main{
 .site-main{
     margin: 0 auto;
     width: 100%;
-    text-align: center;
 }
 .music{
-    padding: 0.5rem 1rem;
+    padding: 8px 16px;
     color: #64676c;
     font-size: 20px;
     text-decoration: none;
@@ -128,15 +134,12 @@ h2{
     font-weight: bold;
 }
 .card{
-    width: 300px;
+    width: 100%;
     height: 300px;
     background-color: yellow;
 }
 /*Footer*/
 footer{
-    position: sticky;
-    bottom: 0;
-    left: 0;
     height: 150px;
     background-color: #282828;
     display: flex;
@@ -173,7 +176,7 @@ footer{
         padding: 1.5rem 0;
     }
     .music{
-        padding: 0.5rem 1rem;
+        padding: 5px 10px;
         font-size: 16px;
     }
     h2{
@@ -183,15 +186,21 @@ footer{
         width: calc(100% / 12 * 3);
     }
     .card{
-        width: 150px;
-        height: 150px;
         background-color: yellow;
     }
 }
 /*Laptop view end*/
 /*Tablet view*/
 @media screen and (max-width: 768px) {
-    
+    body{
+        width: 768px;
+    }
+    .col-md-4{
+        width: calc(100% / 12 * 4);
+    }
+    .col-md-6{
+        width: calc(100% / 12 * 6);
+    }
 }
 /*Tablet view end*/
 /*Mobile view*/
