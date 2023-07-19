@@ -13,3 +13,82 @@
     --menu-color: #64676c;
     --border-color-menu: #adff2f;
 }
+/*utilities*/
+.d-flex{
+    display: flex;
+}
+.d-block{
+    display: block;
+}
+.d-block{
+    display: none;
+}
+.container{
+    margin: 0 auto;
+    width: 100%;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+[class^='col-']
+{
+    padding: 2rem;
+}
+.col-lg-2{
+    width: calc(100% / 12 * 2);
+}
+/*end utilities*/
+
+.main-contain{
+    width: 100%;
+    margin: 0 auto;
+}
+header{
+    width: 250px;
+    height: 1200px;
+    background-color: #000000;
+}
+.square{
+    margin: 0 auto;
+    width: 200px;
+    height: 900px;
+    background-color: blue;
+}
+.rectangle{
+    margin: 0 auto;
+    width: 200px;
+    height: 300px;
+    background-color: red;
+}
+main{
+    width: calc(100% - 250px);
+    background-color: #141922;
+}
+.site-header{
+    height: 100px;
+    background-color: #080b12;
+    text-align: right;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.button{
+    margin-right: 25px;
+    width: 300px;
+    height: 50px;
+    background-color: green;
+}
+.site-main{
+    margin: auto;
+    width: 100%;
+}
+.card{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+}
+footer{
+    height: 100px;
+    background-color: #282828;
+}
