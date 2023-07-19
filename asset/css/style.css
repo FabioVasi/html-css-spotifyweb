@@ -45,14 +45,13 @@ body{
 /*Desktop First*/
 .main-contain{
     width: 100%;
-    margin: 0 auto;
 }
 /*header*/
 header{
     width: 300px;
     background-color: #000000;
 }
-.square{
+.top-list{
     margin: 0 auto;
     width: 250px;
     height: 1000px;
@@ -60,7 +59,7 @@ header{
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
-.rectangle{
+.user{
     margin: 0 auto;
     width: 250px;
     height: 400px;
@@ -153,4 +152,23 @@ footer{
     width: 25%;
     height: 50px;
     background-color: orange;
+}
+/*Footer end*/
+/*Desktop First end*/
+/*Laptop view*/
+@media screen and (max-width: 1100px) {
+    body{
+        width: 1100px;
+    }
+    .music{
+        padding: 0.5rem 1rem;
+    }
+    .col-lg-3{
+        width: calc(100% / 12 * 3);
+    }
+    .card{
+        width: 150px;
+        height: 150px;
+        background-color: yellow;
+    }
 }
