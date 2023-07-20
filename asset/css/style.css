@@ -98,9 +98,18 @@ main{
 }
 .button{
     margin-right: 25px;
-    width: 250px;
-    height: 50px;
-    background-color: green;
+    text-align: center;
+}
+.upgrade{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 0.75rem 2.5rem;
+    border: 2px solid white;
+    border-radius: 2.5rem;
+}
+.upgrade:hover{
+    font-size: 24px;
 }
 /*Site Main*/
 .site-main{
@@ -116,7 +125,13 @@ main{
 }
 .music:hover{
     color: #ffffff;
-    border-bottom: 4px solid #adff2f;
+}
+hr{
+    margin-left: 54px;
+    margin-top: 5px;
+    font-size: 5px;
+    width: 50px;
+    border: 2px solid #adff2f;
 }
 h2{
     color: #ffffff;
@@ -134,9 +149,18 @@ h2{
     font-weight: bold;
 }
 .card{
-    width: 100%;
-    height: 300px;
-    background-color: yellow;
+    text-align: center;
+    color: #ffffff;
+}
+h3{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 24px;
+}
+p{
+    font-size: 18px;
+    font-weight: bold;
+    color: #64676c;
 }
 /*Footer*/
 footer{
@@ -186,7 +210,7 @@ footer{
         width: calc(100% / 12 * 3);
     }
     .card{
-        background-color: yellow;
+        
     }
 }
 /*Laptop view end*/
