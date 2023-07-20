@@ -134,8 +134,15 @@ li{
     padding-left: 1rem;
     filter: invert(50%);
 }
+.arrow:hover{
+    filter: none;
+}
 .installer{
     padding-left: 1rem;
+}
+.installer:hover{
+    color: #ffffff;
+    text-decoration: underline;
 }
 .line{
     border: 1px solid #64676c;
@@ -241,6 +248,9 @@ img{
 }
 img:hover .play{
     display: block;
+}
+.circle{
+    border-radius: 50%;
 }
 .shadow{
     display: block;
