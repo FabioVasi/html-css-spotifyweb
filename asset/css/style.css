@@ -56,8 +56,6 @@ body{
 }
 /*header*/
 header{
-    height: calc(100vh - 150px);
-    overflow: auto;
     width: 300px;
     background-color: #000000;
     display: flex;
@@ -101,6 +99,10 @@ header{
     height: 40px;
     width: 40px;
     margin-right: 0.5rem;
+}
+.scroll{
+    height: calc(100vh - 787px);
+    overflow: auto;
 }
 ul{
     list-style: none;
@@ -252,9 +254,15 @@ img:hover .play{
 .circle{
     border-radius: 50%;
 }
-.shadow{
-    display: block;
+.overlay{
     position: relative;
+}
+.overlay:hover .shadow{
+    display: block;
+}
+.shadow{
+    display: none;
+    position: absolute;
     top: 0;
     left: 0;
     background-color: #00000060;
@@ -264,7 +272,9 @@ img:hover .play{
 .play{
     fill: #ffffff;
     font-size: 4rem;
-    display: none;
+    position: absolute;
+    top: calc(50% - 32px);
+    left: calc(50% - 32px);
 }
 h3{
     margin-top: 1rem;
@@ -287,18 +297,52 @@ footer{
 }
 .left-footer{
     width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+}
+.horror{
+    margin: 0 1rem;
     height: 50px;
-    background-color: aqua;
+    width: 80px;
+    object-fit: cover;
+}
+h6{
+    color: #ffffff;
+    font-size: 20px;
+}
+.like-share{
+    fill: #64676c;
+    font-size: 20px;
+    margin-right: 0.5rem;
 }
 .center-footer{
     width: 50%;
     height: 50px;
-    background-color: brown;
+}
+.repo-menu{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.reproduction{
+    fill: #ffffff;
+    font-size: 40px;
+    padding: 0 1.5rem;
+}
+.duration{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.timer{
+    color: #ffffff;
 }
 .right-footer{
     width: 25%;
     height: 50px;
-    background-color: orange;
 }
 /*Footer end*/
 /*Desktop First end*/
