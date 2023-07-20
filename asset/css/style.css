@@ -19,13 +19,12 @@ body{
 /*utilities*/
 .d-flex{
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .content{
     display: flex;
     justify-content: center;
-}
-.d-block{
-    display: block;
 }
 .d-block{
     display: none;
@@ -334,7 +333,7 @@ h6{
     margin-top: 1rem;
     margin-bottom: 2rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 .timer{
@@ -342,7 +341,9 @@ h6{
 }
 .right-footer{
     width: 25%;
-    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 /*Footer end*/
 /*Desktop First end*/
@@ -368,8 +369,16 @@ h6{
     .col-lg-3{
         width: calc(100% / 12 * 3);
     }
-    .card{
-        
+    .left-footer{
+        width: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 0;
+    }
+    .like-share{
+        fill: #64676c;
+        font-size: 20px;
     }
 }
 /*Laptop view end*/
@@ -383,6 +392,24 @@ h6{
     }
     .col-md-6{
         width: calc(100% / 12 * 6);
+    }
+    .horror{
+        margin: 0 5px;
+        height: 50px;
+        width: 50px;
+        object-fit: cover;
+    }
+    .about{
+        font-size: 16px;
+    }
+    .name{
+        font-size: 12px;
+    }
+    .reproduction{
+        padding: 0 12px;
+    }
+    .timer{
+        font-size: 12px;
     }
 }
 /*Tablet view end*/
@@ -458,6 +485,29 @@ h6{
     }
     .music{
         padding: 0;
+        font-size: 12px;
+    }
+    .horror{
+        margin: 0 5px;
+        height: 30px;
+        width: 30px;
+        object-fit: cover;
+    }
+    .about{
+        font-size: 12px;
+    }
+    .name{
+        font-size: 10px;
+    }
+    .like-share{
+        margin-left: 5px;
+        font-size: 16px;
+    }
+    .reproduction{
+        font-size: 30px;
+        padding: 0 8px;
+    }
+    .timer{
         font-size: 12px;
     }
 }
