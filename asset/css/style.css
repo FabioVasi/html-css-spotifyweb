@@ -1,3 +1,4 @@
+/*Reset rule and font connection*/
 *{
     margin: 0;
     padding: 0;
@@ -16,7 +17,7 @@
 body{
     font-family: 'Open Sans', sans-serif;
 }
-/*utilities*/
+/*Utilities*/
 .d-flex{
     display: flex;
     justify-content: space-evenly;
@@ -54,7 +55,7 @@ body{
     width: 100%;
     height: calc(100vh - 150px);
 }
-/*header*/
+/*Header start*/
 header{
     width: 300px;
     overflow-y: hidden;
@@ -64,6 +65,7 @@ header{
     flex-direction: column;
     justify-content: space-between;
 }
+/*Top Header start*/
 .top-header{
     
 }
@@ -124,7 +126,8 @@ li{
     text-decoration: underline;
     border-left: 3px solid #adff2f;
 }
-/*Bottom Header*/
+/*Top Header end*/
+/*Bottom Header start*/
 .bottom-header{
     
 }
@@ -172,14 +175,16 @@ h5{
     padding-left: 1rem;
     color: #ffffff;
 }
-/*Main*/
+/*Bottom Header end*/
+/*Header end*/
+/*Main start*/
 main{
     width: calc(100% - 300px);
     height: calc(100vh - 150px);
     overflow: auto;
     background-color: #141922;
 }
-/*Site Header*/
+/*Site Header start*/
 .site-header{
     height: 100px;
     background-color: #080b128e;
@@ -206,7 +211,8 @@ main{
 .upgrade:hover{
     font-size: 24px;
 }
-/*Site Main*/
+/*Site header end*/
+/*Site Main start*/
 .site-main{
     margin: 0 auto;
     width: 100%;
@@ -289,6 +295,8 @@ p{
     font-weight: bold;
     color: #64676c;
 }
+/*Site Main end*/
+/*Main end*/
 /*Footer*/
 footer{
     height: 150px;
@@ -297,6 +305,7 @@ footer{
     justify-content: space-between;
     align-items: center;
 }
+/*left-footer start*/
 .left-footer{
     width: 25%;
     display: flex;
@@ -319,6 +328,8 @@ h6{
     font-size: 20px;
     margin-right: 0.5rem;
 }
+/*left-footer end*/
+/*center-footer start*/
 .center-footer{
     width: 50%;
     height: 50px;
@@ -352,6 +363,8 @@ h6{
     height: 10px;
     background-color: #adff2f;
 }
+/*center-footer end*/
+/*right-footer start*/
 .right-footer{
     width: 25%;
     display: flex;
@@ -369,6 +382,7 @@ h6{
     height: 10px;
     background-color: #ffffff;
 }
+/*right-footer end*/
 /*Footer end*/
 /*Desktop First end*/
 /*Laptop view*/
